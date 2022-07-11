@@ -26,7 +26,7 @@ function printOutput() {
     event.preventDefault()
 
     if (isNaN(inpt.value)) {
-        return alert(inpt.value + ' is not a NUMBER! Please give me a Number next time:) please!');
+        return alert(inpt.value + ' is not a NUMBER! Please give me a Number next time:) please! P.S. ALSO do not use "," separator:)');
     }
     output.innerHTML = `
     <div class="style">
