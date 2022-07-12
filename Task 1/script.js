@@ -42,7 +42,7 @@ function printOutput() {
   color:white;
   font-size:30px;
   border:2px solid black;
-  border-radius:15%
+  border-radius:15%;
   padding: 20px;
   text-align: center;
   size:50vh;
