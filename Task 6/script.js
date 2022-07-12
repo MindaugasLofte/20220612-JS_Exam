@@ -19,3 +19,28 @@ const users = [
     { id: '8', name: 'Simon Peterson', age: 30 },
     { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+// 1 dalis
+let pradineSumosReiksme = 0
+
+function getUserAverageAge() {
+    let sum = users.reduce((BuvusiReiksme, dabartineReiksme) => BuvusiReiksme + dabartineReiksme.age, pradineSumosReiksme)
+    let vidurkis = sum / users.length
+        // tikrinu suma
+        // console.log(sum)
+    return `1 dalies atsakymas: Visų "users" masyvo narių amžiaus vidurkis yra ${vidurkis.toFixed(2)} metai`
+}
+getUserAverageAge(users)
+console.log(getUserAverageAge())
+    // 2 dalis
+
+let usersOnlyNames = []
+    // tikrinu ar gerai pasiims reiksme
+    // console.log(users[0].name)
+function getUsersNames() {
+    for (i = 0; i < users.length; i++) {
+        usersOnlyNames.push(users[i].name)
+    }
+    return usersOnlyNames
+}
+console.log("2 dalies atsakymas: Žemiau esantis masyvas grąžina visų users vardus naujame masyve:")
+console.log(getUsersNames(users))
