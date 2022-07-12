@@ -27,12 +27,15 @@ function filterDogOwers() {
     return filteredDogOwersArray;
 }
 filterDogOwers(users)
-console.log(filterDogOwers())
+console.log("Vartotojai auginantys šunis:", filterDogOwers())
     // 2 dalis
+let adultFrom = 18
 let filteredAdultsArray = [];
 
 function filterAdults() {
-    filteredAdultsArray = users.filter(el => el.age >= 18)
+    filteredAdultsArray = users.filter(el => el.age >= adultFrom)
     return filteredAdultsArray;
 }
-console.log(filterAdults(users))
+console.log("Vartotojai, kurių amžius >=" +
+    `${adultFrom}` +
+    ": ", filterAdults(users))

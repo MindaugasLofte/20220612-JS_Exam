@@ -21,24 +21,26 @@ document.querySelector('#btn').addEventListener('click', function() {
 }, false);
 
 function getData() {
-    fetch(ENDPOINT).then(function(res) {
-        return res.json();
-    }).then(function(data) {
-        // console.log(data);//pasitikrinu
-        data.forEach(el => {
-            let div = document.createElement('div');
-            // papildomai padidinta pirma raide ir zemiau kazkiek pakeistas stilius
-            div.textContent = `${el.login[0].toUpperCase()+el.login.slice(1)}`;
-            div.style.textAlign = "center";
-            div.style.display = "block";
-            div.style.color = "magenta";
-            let img = document.createElement('img');
-            img.setAttribute('src', el.avatar_url);
-            img.style.width = '50vw';
-            div.appendChild(img);
-            results.appendChild(div);
+    fetch(ENDPOINT)
+        .then(function(res) {
+            return res.json();
+        })
+        .then(function(data) {
+            // console.log(data);//pasitikrinu
+            data.forEach(el => {
+                let div = document.createElement('div');
+                // papildomai padidinta pirma raide ir zemiau kazkiek pakeistas stilius
+                div.textContent = `${el.login[0].toUpperCase()+el.login.slice(1)}`;
+                div.style.textAlign = "center";
+                div.style.display = "block";
+                div.style.color = "magenta";
+                let img = document.createElement('img');
+                img.setAttribute('src', el.avatar_url);
+                img.style.width = '50vw';
+                div.appendChild(img);
+                results.appendChild(div);
 
-        });
-    })
+            });
+        })
 
 }

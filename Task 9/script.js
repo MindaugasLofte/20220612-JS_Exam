@@ -28,5 +28,5 @@ const filmas = new Movie("Titanikas", "Džordana", 200000000);
 
 // perduoti atsakymą į console
 console.log("Is Movie was expensive? Answer is " + filmas.wasExpensive().toUpperCase())
-console.log("Atsakymas: ",
+console.log("Atsakymas būtų toks su pridėtu wasExpensive metodu : ",
     filmas)
