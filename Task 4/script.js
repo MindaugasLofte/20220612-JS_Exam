@@ -10,3 +10,9 @@ turėti bent minimalų stilių ir būti responsive;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
+
+// fetch json filą
+fetch('cars.json')
+    .then((response) => response.json())
+    // .then((data) => questions.push(...data))
+console.log(response.json())

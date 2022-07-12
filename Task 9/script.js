@@ -15,11 +15,18 @@ class Movie {
         this.director = director;
         this.budget = budget;
     }
+    wasExpensive() {
+        const { budget } = this;
+        if (filmas.budget > 100000000 ? (filmas.wasExpensive = "true") : (filmas.wasExpensive = "false")) { return filmas.wasExpensive }
+
+    }
 }
+
 const filmas = new Movie("Titanikas", "Džordana", 200000000);
-if (filmas.budget > 100000000 ? (filmas.wasExpensive = "true") : (filmas.wasExpensive = "false"));
+// if (filmas.budget > 100000000 ? (filmas.wasExpensive = "true") : (filmas.wasExpensive = "false"));
 // console.log(filmas.prototype)
 
 // perduoti atsakymą į console
+console.log("Is Movie was expensive? Answer is " + filmas.wasExpensive().toUpperCase())
 console.log("Atsakymas: ",
     filmas)

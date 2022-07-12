@@ -29,7 +29,7 @@ class Calculator {
 
 
 // Create a Calculator object. Additional option: User must give two numbers
-const numbers = new Calculator(parseInt(prompt("Įveskite pirmą skaičių")), parseInt(prompt("Įveskite pirmą skaičių")));
+const numbers = new Calculator(parseInt(prompt("Įveskite pirmą skaičių")), parseInt(prompt("Įveskite antrą skaičių")));
 
 // Display output
 let output = `Sum(a+b)= ${numbers.sum()},
