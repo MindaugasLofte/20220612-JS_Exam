@@ -5,7 +5,7 @@ subtraction(a, b) - priima du skaičius ir grąžina jų skirtumą.
 multiplication(a, b) - priima du skaičius ir grąžina jų daugybos rezultatą;
 division(a, b) - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
-// Constructor function for Calculator objects
+// ES6 -Constructor function for Calculator objects 
 class Calculator {
     constructor(firstNumber, secondNumber) {
         this.firstNumber = firstNumber;
